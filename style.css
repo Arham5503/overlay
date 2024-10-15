@@ -1,0 +1,47 @@
+body {
+  background: linear-gradient(-90deg, #167833, #28f863);
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.show-model {
+  width: 125px;
+  height: 45px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.model {
+  width: 400px;
+  height: 300px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(196, 194, 194);
+  filter: blur(600px);
+}
+.close {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
