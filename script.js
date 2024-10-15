@@ -16,3 +16,11 @@ for (let i = 0; i < show.length; i++) {
 }
 close.addEventListener("click", add);
 overlay.addEventListener("click", add);
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    if (!model.classList.contains("hidden")) {
+      add();
+    }
+  }
+});
+
